@@ -1,7 +1,7 @@
 import React from 'react'
-import FormInput from './FormInput'
-import Button from './Buttons'
-import { auth, signInWithGoogle } from '../firebase/firebase.utils'
+import FormInput from '../FormInput'
+import Button from '../Buttons'
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils'
 
 import './Login.scss'
 

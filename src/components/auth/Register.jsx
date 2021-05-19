@@ -1,9 +1,9 @@
 import React from 'react'
 
 import './Register.scss'
-import FormInput from './FormInput'
-import Button from './Buttons'
-import { auth, createUserProfileDocument } from '../firebase/firebase.utils'
+import FormInput from '../FormInput'
+import Button from '../Buttons'
+import { auth, createUserProfileDocument } from '../../firebase/firebase.utils'
 
 class Register extends React.Component {
   constructor(props) {
