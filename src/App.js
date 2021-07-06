@@ -1,16 +1,16 @@
-import React from 'react'
-import { Route, Switch, Redirect } from 'react-router-dom'
-import { connect } from 'react-redux'
-import './App.css'
-import Home from './pages/home/Home'
-import Shop from './pages/shop/Shop'
-import Header from './components/Header'
-import LoginAndRegister from './pages/auth/LoginAndRegister'
-import { auth, createUserProfileDocument } from './firebase/firebase.utils'
-import { setCurrentUser } from './redux/user/user.actions'
-import { selectCurrentUser } from './redux/user/user.selector'
-import { createStructuredSelector } from 'reselect'
-import Checkout from './pages/checkout/Checkout'
+import React from "react"
+import { Route, Switch, Redirect } from "react-router-dom"
+import { connect } from "react-redux"
+import "./App.css"
+import Home from "./pages/home/Home"
+import Shop from "./pages/shop/Shop"
+import Header from "./components/Header"
+import LoginAndRegister from "./pages/auth/LoginAndRegister"
+import { auth, createUserProfileDocument } from "./firebase/firebase.utils"
+import { setCurrentUser } from "./redux/user/user.actions"
+import { selectCurrentUser } from "./redux/user/user.selector"
+import { createStructuredSelector } from "reselect"
+import Checkout from "./pages/checkout/Checkout"
 
 class App extends React.Component {
   unsubscribeFromAuth = null
@@ -33,7 +33,7 @@ class App extends React.Component {
   }
 
   componentWillUnmount() {
-    this.unsubscribeFromAuth?.()
+    this.unsubscribeFromAuth()
   }
 
   render() {

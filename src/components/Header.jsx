@@ -1,16 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { connect } from 'react-redux'
+import React from "react"
+import { Link } from "react-router-dom"
+import { connect } from "react-redux"
 
-import { ReactComponent as Logo } from '../assets/logo.svg'
+import { ReactComponent as Logo } from "../assets/logo.svg"
 
-import './Header.scss'
-import { auth } from '../firebase/firebase.utils'
-import CartIcon from './cart/CartIcon'
-import CartDropdown from './cart/CartDropdown'
-import { selectCartHidden } from '../redux/cart/cart.selectors'
-import { selectCurrentUser } from '../redux/user/user.selector'
-import { createStructuredSelector } from 'reselect'
+import "./Header.scss"
+import { auth } from "../firebase/firebase.utils"
+import CartIcon from "./cart/CartIcon"
+import CartDropdown from "./cart/CartDropdown"
+import { selectCartHidden } from "../redux/cart/cart.selectors"
+import { selectCurrentUser } from "../redux/user/user.selector"
+import { createStructuredSelector } from "reselect"
 
 const Header = ({ currentUser, hidden }) => (
   <div className="header">

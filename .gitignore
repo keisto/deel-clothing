@@ -12,6 +12,8 @@
 /build
 
 # misc
+.idea/
+.nova/
 .DS_Store
 .env.local
 .env.development.local
